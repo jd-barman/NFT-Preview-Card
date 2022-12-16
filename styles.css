@@ -100,6 +100,7 @@ main{
 }
 
 .container img{
+    max-width: 100%;
     border-radius: 0.65rem;
     margin-bottom: 20px;
 }
@@ -147,7 +148,7 @@ main{
 .details{
     color: var(--soft-blue);
     font-weight: 400;
-    font-size: 0.96rem;
+    font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
@@ -221,4 +222,10 @@ main{
 
 .creator:is(:hover, :focus){
     color: var(--cyan);
+}
+
+@media (min-width:500px) {
+    .main{
+        max-width: 375px;
+    }
 }
